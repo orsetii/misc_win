@@ -22,7 +22,7 @@ int main()
 	BOOL bRet = Process32First(hSnap, &PE32);
 	while (bRet) {
 
-		if (!strcmp(szProc, PE32.szExeFile)) {
+		if (!strcmp(szProc, (const char*) PE32.szExeFile)) {
 
 			PID = PE32.th32ProcessID;
 			break;

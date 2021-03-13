@@ -18,5 +18,5 @@ struct MANUAL_MAPPING_DATA {
 
 // only abs paths.
 bool ManualMap(HANDLE hProc, const char* szDllFiles);
-void Shellcode(MANUAL_MAPPING_DATA* pdata);
+void __stdcall Shellcode(MANUAL_MAPPING_DATA* pdata);
 
